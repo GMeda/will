@@ -80,7 +80,9 @@
 
 <button type="submit" class="custBtn">👉 Start 👈</button>
 </form>
+<button onclick="myFunction()">Try it</button>
 
+<p id="demoo"></p>
 
 <button onclick="myFunction()">Try it</button>
     
@@ -97,5 +99,20 @@
 }
     var name=prompt('your name please')
       document.getElementById("demo").innerHTML='your name is '+name
+    
+    
+
+
+
+function myFunction() {
+  var x = document.getElementsByTagName("META");
+  var txt = "";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    txt = txt + "Content of "+(i+1)+". meta tag: "+x[i].content+"<br>";
+  }
+  
+  document.getElementById("demoo").innerHTML = txt;
+}
   </script>
 </html>
