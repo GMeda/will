@@ -4,6 +4,14 @@
 
 
   <title>asdf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:title" content="XX"/>
+  <meta name="description" content="geo send you">
+  <meta property="og:title"  content = "nahom send you" />
+  <meta property="og:description" content="Super Dare Friendship Quiz">
+  <meta property="og:image" content="https://cdn3.vectorstock.com/i/1000x1000/28/52/surprise-open-gift-box-vector-20692852.jpg">
+
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
@@ -39,7 +47,7 @@
   <input type="submit" value="Submit">
 </form>
 -->
-
+<a href="https://api.whatsapp.com/send?phone=15551234567&text=I'm%20interested%20in%20your%20car%20for%20sale">work</a>
 <p id="demo"></p>
 <button onclick="myFunction()">Try it</button>
 <meta property="og:title" content="XX"/>
@@ -58,41 +66,4 @@ function myFunction() {
 
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Save data using JS</title> 
-</head>
-<script>
- function saveData() {
-  document.cookie="fname="+document.getElementById('fname').value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
-  document.cookie="email="+document.getElementById('email').value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
 
-  var radios = document.getElementsByName('gender');
-
-  for (var i = 0, length = radios.length; i < length; i++) {
-    if (radios[i].checked) {
-        document.cookie="gender="+radios[i].value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
-        break;
-    }
-}
- alert('Data Saved!');
-}
- alert('SAVED DATA: '+document.cookie);
-</script>
-<body>
-  <h1>Sign up</h1>
-<form name="myForm" id="myForm" action="javascript:saveData();">
-  Name:<br>
-  <input type="text" name="fname" id="fname" required maxlength="40"><br><br>
- E-mail: <input type="email" name="email" id="email" required><br><br>
-  Gender:<br>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br><br>
-  <input type="submit" value="Submit">
-</form>
-
-</body>
-</html>
